@@ -1,0 +1,22 @@
+/* universal selector*/
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#first, #second{
+   background-color:pink ;
+ }
+body{
+    font-siz
+}
+/* specificity order =====id>class>element */
+/* id selector*/
+#first>p{
+  color:green;
+}
+/* class selector*/
+.purple{
+  color: blueviolet;
+}
+.highlight{
+  background-color: yellow;
+}
