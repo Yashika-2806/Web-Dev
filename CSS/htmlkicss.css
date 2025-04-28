@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+}
+.box{
+    width:200px;
+    height:200px;
+    border:20px solid red;
+    padding:30px;
+    margin:20px;
+}
+h1{
+    text-shadow:4px 4px 1px red; 
+    /* 8px 8px 1px blue */
+    font-family:''
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT BOT</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color:black;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background:rgb(121, 121, 235);
+        }
+        .navbarbottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background:rgba(245, 245, 245, 0);
+            padding: 5px;
+            color: whitesmoke;
+            size:40px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color:black;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            color:whitesmoke;
+            font-family: bold;
+            font-size: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color:black;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            height: 82vh;
+            margin-top:0px;
+        }
+        .table-section {
+            background: rgba(245, 245, 245, 0.601);
+            padding: 20px;
+            border-radius: 10px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .chat-section {
+            background: #333;
+            padding: 0px;
+            border-radius: 20px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            height:100%;
+        }
+        .chat-box {
+            height: 470px;
+            overflow-y: auto;
+            background:rgb(121, 121, 235);
+            padding: 10px;
+            border-radius: 7px;
+            flex-grow: 1;
+        }
+        .chat-input {
+            display: flex;
+            margin-top: 0px;
+            height: 50px;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .chat-input button {
+            padding: 10px;
+            border: none;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 0px;
+            size: 0ch;
+        }
+        html, body {
+    overflow: hidden; /* Prevents scrolling */
+    height: 100%; /* Ensures full height without overflow */
+    margin: 0; /* Removes any margin */
+    padding: 0; /* Removes any padding */
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">CHATBOT</div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li><br>
+        </ul>
+    </div>
+    <div class="navbarbottom">
+        <ul class="nav-links">
+            <li><a href="#"></a>Results</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="table-section">
+            <div class="text" id="text">
+                <p>Data will be displayed here.</p>
+            </div>
+        </div>
+        <div class="chat-section">
+            <div class="chat-box" id="chat-box">
+                <p><strong>Bot:</strong> How can I assist you?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">SEND</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
